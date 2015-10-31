@@ -1,18 +1,29 @@
 $(document).ready(init)
 
 function init() {
-  $('.tower').on('click', diskSelect);
+  $('.tower').on('click', moveDisk);
 }
 
-function diskSelect() {
-  var selectedDisk = $(this).children('.disk:first-child')
-  if (selectedDisk.hasClass('selected')) {
-    ('.selected').detach();
+var $selectedDisk;
+function moveDisk() {
+  $selectedDisk = $(this).children('.disk:first-child')
+  if ($selectedDisk.hasClass('selected')) {
+    var chosenDisk = $selectedDisk.detach();
+    debugger;
   } else {
-    selectedDisk.addClass('selected');
-  }
-  //$(this).children('.disk:first-child').addClass('selected');
+    $(this).addClass('selected');
 }
+
+ // $('.tower').on('click', diskSelect);
+  // $('.tower').on('click', diskDrop);
+//   $selectedDisk = $('.selected').detach();
+// }
+
+// function diskDrop() {
+//   $selectedDisk.appendTo(this);
+// }
+  
+
 
 // function(diskMove) {
 //   if ()
