@@ -34,3 +34,8 @@ body {
 #disk3 {
   width: 160px;
 }
+
+.selected {
+  margin-bottom: 8px;
+  box-shadow: 10px 10px 5px #222;
+}
