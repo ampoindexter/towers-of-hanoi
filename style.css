@@ -1,0 +1,36 @@
+body {
+  background-color: #7403ab;
+}
+
+#title {
+  text-align: center;
+  font-size: 50px;
+  color: #ff00b3;
+}
+
+.tower {
+  background-color: blue;
+  border: 3px solid #ff00b3;
+  height: 350px;
+  padding-top: 100px;
+}
+
+.disk {
+  color: fff;
+  background-color: green;
+  border: 2px solid #ff00b3;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+#disk1 {
+  width: 80px;
+}
+
+#disk2 {
+  width: 120px;
+}
+
+#disk3 {
+  width: 160px;
+}
