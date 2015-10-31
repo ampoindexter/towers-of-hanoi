@@ -10,18 +10,25 @@ var clickedTower;
 
 function thisTurn() {
   clickedTower = '#' + $(this).attr('id');
-  diskSelect();
+  
+  if (!$selectedDisk) {
+    diskSelect();
+  } else {
+    moveDisk();
+  }
+  
 }
 
 
 function diskSelect() {
-  $selectedDisk = $(clickedTower).children('.disk:first-child')
-  $selectedDisk.addClass('selected');
+  $selectedDisk = $(clickedTower).children('.disk:first-child');
+  $selectedDisk.toggleClass('selected');
   //debugger;
 }
 
 function moveDisk() {
-  
+  $selectedDisk.prependTo(clickedTower);
+  $selectedDisk = "";
 }
 
 // function diskDrop() {
