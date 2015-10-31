@@ -31,8 +31,8 @@ function diskSelect() {
 
 function moveDisk() {
   $selectedDisk.prependTo(this);
-  $selectedDisk = "";
   $selectedDisk.removeClass('selected');
+  $selectedDisk = "";
 }
 
 // function diskDrop() {
